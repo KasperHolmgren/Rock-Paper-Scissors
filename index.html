@@ -1,12 +1,50 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="style.css">
-        <title>Rock Paper Scissors</title>
-    </head>
-    <body>
-        <script src="script.js"></script>
-    </body>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="startScreen">
+        <h1 class="pageText"> Sten Sax Påse</h1>
+        <button id="startBtn">starta spel</button>
+        <h1 id="rules">Vinnaren utses enligt:<br>
+            Sten vinner över Sax<br>
+            Sax vinner över Påse<br>
+            Påse vinner över Sten</h1>
+    </div>
+    
+    <div id="gameMode">
+        <h1 class="pageText">Välj Spelläge</h1>  
+        <button id="playerVsComputer">Spelare mot dator</button>
+        <button id="playerVsPlayer">spelare mot spelare</button> 
+        <h1 id="commingSoon">Kommer snart</h1>
+    </div>
+
+
+
+    <div id="gameDiv">
+        <h1 class="gameText" id="playerText">Spelare: </h1>
+        <h1 class="gameText" id="computerText">Dator: </h1>
+        <h1 class="gameText" id="resultText">Resultat: </h1>
+
+    
+
+        <button class="choiceBtn">Sten</button>
+        <button class="choiceBtn">Sax</button>
+        <button class="choiceBtn">Påse</button>
+        
+    </div>
+
+
+
+    
+       
+
+
+    <script src="main.js"></script>
+</body>
 </html>
