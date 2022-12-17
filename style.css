@@ -53,10 +53,9 @@ body
   opacity: 0.5;
 }
 
-#startBtn:hover
+#startBtn:hover, #playerVsComputer:hover, .choiceBtn:hover, #refresh:hover
 {
   transform: scale(1.1);
-  
 }
 
 #startBtn:hover + #rules
@@ -64,7 +63,6 @@ body
   opacity: 1;
   font-size: 2.5em;
 }
-
 
 #gameMode
 {
@@ -99,7 +97,6 @@ body
   color: #fee529;
   line-height: 200%;
   width: 65%;
-  margin-top: 2%;
   background-color: #7f0101;
   font-size: 1.6em;
   border-radius: 25px;
@@ -108,16 +105,25 @@ body
   margin-top: 15%;
 }
 
-#commingSoon
+img[src="lås.png"]
 {
-  transform: rotate(25deg);
-  font-size: 3em;
+  width: 12%;
+  height: 15%;
   position: relative;
-  top: -18%;
-  color: darkgray;
+  top: -188px;
+  left: 205px;
 
 }
 
+#commingSoon
+{
+  transform: rotate(10deg);
+  font-size: 3em;
+  position: relative;
+  top: -18%;
+  color: rgba(14, 14, 14, 0.9);
+
+}
 
 #gameDiv{
   font-family: "arial";
@@ -134,21 +140,75 @@ body
 
 .choiceBtn{
   color: #fee529;
-  line-height: 200%;
-  width: 30%;
-  margin-top: 2%;
+  width: 28%;
+  margin: 10px 10px;
+  margin-top: 10%;
   background-color: #7f0101;
   font-size: 1.6em;
   border-radius: 25px;
   border: 5px solid;
   border-color: #fee529;
+  height: 35%
+  
+}
+
+.choiceBtn img {
+  width: 100%; 
+  height: 60%
 
 }
 
+
+
+#finalPage
+{
+  font-family: "arial";
+  border: 6px solid;
+  border-radius: 25px;
+  border-color: #fee529;
+  padding: 10px;
+  background: linear-gradient(to top, #8b0000, #cc0202);
+  text-align: center;
+  height: 500px;
+  width: 500px;
+  box-shadow: 0 35px 55px rgba(0,0,0,0.5);
+
+}
+
+#resultText
+{
+  color: #fee529;
+  line-height: 200%;
+  width: 50%;
+  margin: auto;
+  margin-top: 2%;
+  background-color: #7f0101;
+  font-size: 2em;
+
+  border: 5px solid;
+  border-color: #fee529
+  
+}
 
 #playerText{
   color: #fee529;
 }
+
 #computerText{
   color: #fee529;
+}
+
+#refresh
+{
+  color: #fee529;
+  line-height: 200%;
+  width: 50%;
+  margin: auto;
+  margin-top: 15%;
+  background-color: #7f0101;
+  font-size: 2em;
+  border-radius: 25px;
+  border: 5px solid;
+  border-color: #fee529
+  
 }

@@ -22,22 +22,31 @@
         <button id="playerVsComputer">Spelare mot dator</button>
         <button id="playerVsPlayer">spelare mot spelare</button> 
         <h1 id="commingSoon">Kommer snart</h1>
+        <img src="lås.png" alt="lås">
     </div>
 
 
 
     <div id="gameDiv">
-        <h1 class="gameText" id="playerText">Spelare: </h1>
-        <h1 class="gameText" id="computerText">Dator: </h1>
-        <h1 class="gameText" id="resultText">Resultat: </h1>
-
-    
-
-        <button class="choiceBtn">Sten</button>
-        <button class="choiceBtn">Sax</button>
-        <button class="choiceBtn">Påse</button>
+        <h1 class="pageText">Vad väljer du?</h1>
+        <button class="choiceBtn"><img src="sten.png" alt="Sten">Sten</button>
+        <button class="choiceBtn"><img src="sax.png"  alt="Sax">Sax</button>
+        <button class="choiceBtn"><img src="påse.png" alt="Påse">Påse</button>
         
     </div>
+
+    <div id="finalPage">
+        <h1 class="pageText">Vinnare är:</h1> 
+        <h1 class="gameText" id="resultText"></h1>
+        <h1 class="gameText" id="playerText"></h1>
+        <h1 class="gameText" id="computerText"></h1>
+        
+        <button onClick="window.location.reload();" id="refresh">Spela igen!</button>
+
+
+    </div>
+
+
 
 
 

@@ -10,8 +10,8 @@ choiceBtns.forEach(button => button.addEventListener("click", () => {
 
     player = button.textContent;
     computerTurn();
-    playerText.textContent = `spelare: ${player}`;
-    computerText.textContent = `Dator: ${computer}`;
+    playerText.textContent = `Du valde: ${player}`;
+    computerText.textContent = `Dator valde: ${computer}`;
     resultText.textContent = checkWinner();
 }));
 
@@ -53,6 +53,7 @@ function checkWinner(){
 
 document.getElementById("gameMode").style.display = "none";
 document.getElementById("gameDiv").style.display = "none";
+document.getElementById("finalPage").style.display = "none";
 
 
 
@@ -61,7 +62,14 @@ document.getElementById("startBtn").addEventListener("click", function() {
   document.getElementById("startScreen").style.display = "none";
 });
 
-document.getElementById("gameMode").addEventListener("click", function() {
+document.getElementById("playerVsComputer").addEventListener("click", function() {
   document.getElementById("gameDiv").style.display = "block";
   document.getElementById("gameMode").style.display = "none";
+});
+
+document.querySelectorAll(".choiceBtn").forEach(function(button) {
+  button.addEventListener("click", function() {
+    document.getElementById("gameDiv").style.display = "none";
+    document.getElementById("finalPage").style.display = "block";
+  });
 });
