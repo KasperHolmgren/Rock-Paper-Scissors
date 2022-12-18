@@ -11,7 +11,7 @@ choiceBtns.forEach(button => button.addEventListener("click", () => {
     player = button.textContent;
     computerTurn();
     playerText.textContent = `Du valde: ${player}`;
-    computerText.textContent = `Dator valde: ${computer}`;
+    computerText.textContent = `Datorn valde: ${computer}`;
     resultText.textContent = checkWinner();
 }));
 
@@ -40,13 +40,13 @@ function checkWinner(){
       return "Oavgjort!";
     }
     else if(computer == "Sten"){
-      return (player == "Påse") ? "Du vann!" : "Du förlorade!"
+      return (player == "Påse") ? "Du!" : "Datorn!"
     }
     else if(computer == "Påse"){
-      return (player == "Sax") ? "Du vann!" : "Du förlorade!"
+      return (player == "Sax") ? "Du!" : "Datorn!"
     }
     else if(computer == "Sax"){
-      return (player == "Sten") ? "Du vann!" : "Du förlorade!"
+      return (player == "Sten") ? "Du!" : "Datorn!"
     }
 }
 
